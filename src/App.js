@@ -1,7 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import ProjectList from "./components/ProjectList";
 
 function App() {
+
+  const projects = [];
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +22,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <body className="App-body">
+        <ProjectList projects={projects} />
+      </body>
     </div>
   );
 }
