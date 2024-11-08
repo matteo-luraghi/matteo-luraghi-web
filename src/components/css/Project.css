@@ -4,7 +4,7 @@
   flex-direction: column;
   max-width: 700px;
   padding: 16px;
-  margin: 16px;
+  margin-bottom: 30px;
   border-radius: 30px;
   background-color: #313945;
   color: #fff;
@@ -20,6 +20,8 @@
 
 .project-card-header {
   display: flex;
+  width: 100%;
+  align-items: center;
 }
 
 .project-logo {
