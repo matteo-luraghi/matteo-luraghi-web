@@ -5,3 +5,21 @@ section {
   gap: 24px;
   padding: 16px;
 }
+
+/* Loading state styling */
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #666;
+  padding: 20px;
+}
+
+/* Error state styling */
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+  padding: 20px;
+  background-color: #313945;
+  border-radius: 20px;
+}

@@ -2,12 +2,12 @@ import "./css/Project.css";
 
 export default function Project({ project }) {
   return (
-    <div className="project-card">
-      <img src={project.img} className="project-logo" alt={project.title} />
-      <a href={project.url}>
+    <a href={project.url} className="project-card">
+      <div className="project-card-header">
+        <img src={project.image} className="project-logo" alt={project.title} />
         <h3>{project.title}</h3>
-        <p>{project.description}</p>
-      </a>
-    </div>
+      </div>
+      <p>{project.description}</p>
+    </a>
   );
 }
