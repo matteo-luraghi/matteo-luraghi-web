@@ -48,17 +48,23 @@ export default function Project({ project }) {
   const showEndDate = formateDate(endDate);
 
   return (
-    <a href={project.url} className="project-card" ref={cardRef}>
-      <div className="project-card-header">
-        <img src={project.image} className="project-logo" alt={project.title} />
-        <div className="project-title-container">
-          <h3 className="project-title">{project.title}</h3>
-          <p className="project-date">
-            {showStartDate}-{showEndDate}
-          </p>
+    <div className="project-card-container">
+      <a href={project.url} className="project-card noSelect" ref={cardRef}>
+        <div className="project-card-header">
+          <img
+            src={project.image}
+            className="project-logo"
+            alt={project.title}
+          />
+          <div className="project-title-container">
+            <h3 className="project-title">{project.title}</h3>
+            <p className="project-date">
+              {showStartDate}-{showEndDate}
+            </p>
+          </div>
         </div>
-      </div>
-      <p className="project-description">{project.description}</p>
-    </a>
+        <p className="project-description">{project.description}</p>
+      </a>
+    </div>
   );
 }
