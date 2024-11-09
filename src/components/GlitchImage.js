@@ -1,5 +1,5 @@
 import "./css/GlitchImage.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import logo from "../logo.svg";
 
 function importAll(r) {
@@ -44,18 +44,25 @@ export default function GlitchImage() {
   const glitchesNum = 4;
   const glitchesDuration = 90; // in milliseconds
 
+  const imageTypeRef = useRef("dodge");
+
   useEffect(() => {
     const glitchInterval = setInterval(() => {
-      let imageType = "dodge";
+      // randomly set the image type as "diff" or "dodge" to prevent "diff" to be the first type
+      imageTypeRef.current = Math.random() > 0.5 ? "diff" : "dodge";
+
       for (let i = 0; i < glitchesNum; i++) {
         setTimeout(
           () => {
-            // update the type of image to show
-            imageType = nextType(imageType);
+            const currentImageType = imageTypeRef.current;
+            const nextImageType = nextType(currentImageType);
             // choose the next image
-            const nextImage = getRandomImage(imageType) || logo;
+            const nextImage = getRandomImage(nextImageType) || logo;
             // update the bg image
             setBgImage(nextImage);
+
+            // update the image type ref
+            imageTypeRef.current = nextImageType;
           },
           // make each glitch happen as soon
           // as the previous finishes
@@ -67,7 +74,7 @@ export default function GlitchImage() {
           setBgImage(logo);
         },
         // add a small gap after the last glitch image
-        glitchesNum * glitchesDuration + 50,
+        glitchesNum * glitchesDuration + 100,
       );
     }, 4500);
 

@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <a href="https://github.com/matteo-luraghi">
+        <a href="https://github.com/matteo-luraghi" className="noSelect">
           <GlitchImage />
         </a>
       </div>
