@@ -22,9 +22,9 @@ export default function ProjectList() {
             project.image === ""
               ? project.image
               : `${process.env.PUBLIC_URL}/assets/projects/` +
-              project.image +
-              // file extension
-              ".svg";
+                project.image +
+                // file extension
+                ".webp";
           return project;
         });
         setProjects(new_data);
