@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <a href="https://github.com/matteo-luraghi" className="noSelect">
+        <a
+          href="https://github.com/matteo-luraghi"
+          aria-label="Check out my github account!"
+          className="noSelect"
+        >
           <GlitchImage />
         </a>
       </div>
