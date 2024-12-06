@@ -45,7 +45,8 @@ export default function Project({ project }) {
   const endDate = new Date(project.end_date);
 
   const showStartDate = formateDate(startDate);
-  const showEndDate = formateDate(endDate);
+  // set show end date as "present" if it's still in progress
+  const showEndDate = isNaN(endDate) ? project.end_date : formateDate(endDate);
 
   return (
     <div className="project-card-container">

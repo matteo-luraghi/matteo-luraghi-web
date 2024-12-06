@@ -1,6 +1,6 @@
 import Project from "./Project";
 import "./css/ProjectList.css";
-import { getProjects } from "../api/client";
+import { getProjects } from "../projects/ProjectLoader";
 import { useEffect, useState } from "react";
 
 export default function ProjectList() {
@@ -8,34 +8,16 @@ export default function ProjectList() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // fetch projects from db
   useEffect(() => {
-    getProjects()
-      .then(({ data, error }) => {
-        if (error) {
-          throw error;
-        }
-
-        const new_data = data.map((project) => {
-          // add image path if needed
-          project.image =
-            project.image === ""
-              ? project.image
-              : `${process.env.PUBLIC_URL}/assets/projects/` +
-                project.image +
-                // file extension
-                ".webp";
-          return project;
-        });
-        setProjects(new_data);
-      })
-      .catch((error) => {
-        setError("Error loading projects");
-        console.log("ERROR LOADING PROJECTS: " + error.message);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    try {
+      const projects = getProjects();
+      setProjects(projects);
+    } catch (error) {
+      setError("Error Loading Projects");
+      console.log("ERROR LOADING PROJECTS: " + error.message);
+    } finally {
+      setLoading(false);
+    }
   }, []); // Empty dependency array to run the effect only once
 
   return (

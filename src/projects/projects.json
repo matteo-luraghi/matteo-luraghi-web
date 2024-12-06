@@ -1,0 +1,56 @@
+[
+  {
+    "title": "POLI.RADIO website",
+    "description": "As the Chief Information Officer of POLI.RADIO, the official student radio of Politecnico di Milano, I led the complete rewrite of the station's website. My role included overseeing and contributing to the development process, utilizing technologies such as Strapi for content management, Ory for authentication and login, Express for server-side functionality, and React for the frontend.",
+    "url": "https://www.poliradio.it",
+    "image": "https://www.poliradio.it/images/logo.svg",
+    "start_date": "2024-11-19",
+    "end_date": "Present",
+    "visible": false
+  },
+  {
+    "title": "Linutils",
+    "description": "Linutils is a Rust-based tool that simplifies and speeds up Linux installation with pre-configured environments and easy customization options to suit your preferences.",
+    "url": "https://github.com/matteo-luraghi/linutils/",
+    "image": "linutils",
+    "start_date": "2023-11-05",
+    "end_date": "2024-09-24",
+    "visible": true
+  },
+  {
+    "title": "Notion Quotes Bot",
+    "description": "A Telegram bot that brings book quotes directly from your Notion database to your chat. With Quotes Bot, you can instantly receive random bits of inspiration or search for specific quotes from your favorite authors or books, making it the perfect companion for daily motivation and literary discovery.",
+    "url": "https://github.com/matteo-luraghi/notionquotesbot",
+    "image": "quotes_bot",
+    "start_date": "2023-01-12",
+    "end_date": "2024-08-30",
+    "visible": true
+  },
+  {
+    "title": "Codex Naturalis",
+    "description": "For the final project in the Software Engineering course at Politecnico di Milano (2023/2024), we created a video game adaptation of the board game Codex Naturalis.",
+    "url": "https://github.com/matteo-luraghi/ing-sw-2024-Luraghi-Meroi-Leonardi-Kodheli",
+    "image": "codex_logo",
+    "start_date": "2024-03-01",
+    "end_date": "2024-06-28",
+    "visible": true
+  },
+  {
+    "title": "Team Manager",
+    "description": "Developed for the Web Technologies course as Politecnico di Milano (2023/2024), this project is a web application for managing work groups, created in two versions: one in pure HTML and another with JavaScript integration.",
+    "url": "https://github.com/matteo-luraghi/progetto-tiw-2024",
+    "image": "groups_web_app",
+    "start_date": "2024-04-18",
+    "end_date": "2024-06-06",
+    "visible": true
+  },
+  {
+    "title": "Path Finding",
+    "description": "For the final project in the Algorithms and Data Structures course at Politecnico di Milano (2022/2023), I built an optimized route-planning system for a highway with unique service stations.",
+    "url": "https://github.com/matteo-luraghi/progetto-api-2023",
+    "image": "api_project",
+    "start_date": "2023-05-10",
+    "end_date": "2023-09-01",
+    "visible": true
+  }
+]
