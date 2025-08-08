@@ -9,6 +9,15 @@
     "visible": false
   },
   {
+    "title": "IoT Projects",
+    "description": "For the Internet of Things course at Politecnico di Milano (2024/2025), I built practical IoT solutions involving sensor nodes, network protocol analysis, MQTT messaging, and real-time forklift tracking.",
+    "url": "https://github.com/matteo-luraghi/projects-iot-2025",
+    "image": "iot",
+    "start_date": "2025-03-11",
+    "end_date": "2025-05-25",
+    "visible": true
+  },
+  {
     "title": "Linutils",
     "description": "Linutils is a Rust-based tool that simplifies and speeds up Linux installation with pre-configured environments and easy customization options to suit your preferences.",
     "url": "https://github.com/matteo-luraghi/linutils/",

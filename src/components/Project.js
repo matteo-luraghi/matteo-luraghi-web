@@ -56,6 +56,7 @@ export default function Project({ project }) {
             src={project.image}
             className="project-logo"
             alt={project.title}
+            loading="lazy"
           />
           <div className="project-title-container">
             <h3 className="project-title">{project.title}</h3>
