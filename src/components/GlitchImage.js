@@ -76,7 +76,7 @@ export default function GlitchImage() {
         // add a small gap after the last glitch image
         glitchesNum * glitchesDuration + 100,
       );
-    }, 4500);
+    }, 12000);
 
     return () => clearInterval(glitchInterval);
   }, [bgImage]);

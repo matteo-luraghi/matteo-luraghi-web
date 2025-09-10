@@ -9,6 +9,15 @@
     "visible": false
   },
   {
+    "title": "Distributed Systems Project",
+    "description": "For the Distributed System course at Politecnico di Milano (2024/2025), I developed a distributed key-value store ensuring high availability and causal consistency through replicated storage, client–server communication, and fault-tolerant synchronization across multiple servers.",
+    "url": "https://github.com/matteo-luraghi/project-ds-2025",
+    "image": "ds",
+    "start_date": "2025-08-11",
+    "end_date": "2025-09-08",
+    "visible": true
+  },
+  {
     "title": "IoT Projects",
     "description": "For the Internet of Things course at Politecnico di Milano (2024/2025), I built practical IoT solutions involving sensor nodes, network protocol analysis, MQTT messaging, and real-time forklift tracking.",
     "url": "https://github.com/matteo-luraghi/projects-iot-2025",
